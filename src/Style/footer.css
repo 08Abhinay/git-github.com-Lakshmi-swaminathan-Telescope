@@ -1,0 +1,6 @@
+.footer {
+    background: linear-gradient(to right, #000000, rgb(111, 124, 124)); /* Black to rgb(111, 124, 124) gradient */
+    color: #ffffff; /* Text color */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center; /* Align text in the center */
+  }
