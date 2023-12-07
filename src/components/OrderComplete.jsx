@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../Style/OrderComplete.css'; // Import your stylesheet for styling
 import Header from '../components/header'
+import Footer from '../components/footer';
 
 
 const OrderComplete = ({ orderId }) => {
@@ -83,7 +84,7 @@ const OrderComplete = ({ orderId }) => {
       </div>
       
     </div>
-    
+    <Footer/>
     </>
   );
 };

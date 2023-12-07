@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import '../Style/ShoppingCartStyle.css';
 import { toast } from 'react-toastify'; // Import toast from react-toastify
 import Header from './header';
+import Footer from './footer';
 
 
 
@@ -78,7 +79,7 @@ const ShoppingCart = ({ handleRemoveFromCart }) => {
           </>
         )}
       </div>
-     
+      <Footer/>
     </div>
   );
 };

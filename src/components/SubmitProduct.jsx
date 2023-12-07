@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "./header";
+
 
 export default function SubmitProduct() {
   const style = {
@@ -13,11 +15,12 @@ export default function SubmitProduct() {
   const navigate = useNavigate();
   return (
     <>
-        
+        <Header/>
         <div style={style}>
         <h1>Product is Successfully added</h1>
         <button onClick={() => navigate('/homepage')}>Please go back to the Home Page</button>
         </div>
+        
     </>
 
   );

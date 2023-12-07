@@ -3,6 +3,7 @@ import axios from 'axios';
 import '../Style/ProductUpload.css';
 import { useNavigate } from "react-router-dom";
 import Header from "./header";
+import Footer from './footer';
 
 
 export default function ProductUpload() {
@@ -196,6 +197,7 @@ export default function ProductUpload() {
           
       <button type="submit">Submit</button>
   </form>
+  <Footer/>
     </div>
     
   )

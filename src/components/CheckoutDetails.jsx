@@ -6,6 +6,8 @@ import checkoutStyles from '../Style/checkoutStyles.css';
 import { useNavigate } from 'react-router-dom'; // Assuming you're using React Router v6
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Header from '../components/header'
+import Footer from '../components/footer'
 
 import { useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
 
@@ -459,7 +461,9 @@ const CheckoutDetails = () => {
 
 
   return (
-    <form >
+    <>
+      <Header/>
+      <form >
       <section style={checkoutStyles.section}>
           <h3>Contact Information</h3>
           <div style={checkoutStyles.inputGroup}>
@@ -651,6 +655,9 @@ const CheckoutDetails = () => {
        checkout
       </button>
     </form>
+    <Footer/>
+    </>
+    
   );
 };
 
